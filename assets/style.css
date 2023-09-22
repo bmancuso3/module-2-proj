@@ -9,6 +9,7 @@ body {
     flex-wrap:wrap;
     font-family:trebuchet ms;
     background-color:black;
+    justify-content:center;
 }
 
 header {
@@ -16,13 +17,14 @@ header {
     justify-content:center;
     width:100%;
     align-items:center;
-    padding: 2%;
+    padding: 1%;
     color:var(--dark-red);
 }
 
 section {
     color:var(--dark-red);
     text-align:center;
+    padding-inline:10%;
 }
 
 h1 {
@@ -31,14 +33,21 @@ h1 {
 
 h2 {
     font-size:170%;
+    padding:5px;
     color:var(--dark-red);
 }
 
 article {
-    min-width: 33%;
+
+}
+
+.card {
+    border-style:dashed;
     background-color:var(--bg2);
-    border:dashed;
-    border-radius:5px;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+
 }
 
 footer {
@@ -47,4 +56,10 @@ footer {
     font-weight:bold;
     color:var(--dark-red);
     justify-content:center;
+    padding:2%;
+}
+
+@media screen and (max-width:768px) {
+
+    width:50%;
 }
